@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>No habrá segunda cita, pero... - Adrian Santuario</title>
+    <meta name="description" content="Data Analysis and Visualization">
+    <meta name='viewport'
+      content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+
+    <!-- +++++++++++++++++++++++++++++++++++++++++++++++++
+        ++++++++++++++++++++++++++++++++++++++++++++++++++
+        ++++++ STYLE +++++++++++++++++++++++++++++++++++++
+        ++++++++++++++++++++++++++++++++++++++++++++++++++
+        ++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+    <link rel="stylesheet" href="assets/styles/questions_style.css">
+
+
+    <!-- +++++++++++++++++++++++++++++++++++++++++++++++++
+        ++++++++++++++++++++++++++++++++++++++++++++++++++
+        ++++++ SCRIPTS +++++++++++++++++++++++++++++++++++
+        ++++++++++++++++++++++++++++++++++++++++++++++++++
+        ++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+
+    <script src="libraries/p5/p5.min.js"></script>
+    <script src="addons/p5.dom.min.js"></script>
+    <script src="addons/p5.sound.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script src="libraries/animate/p5.animate.js" type="text/javascript"></script>
+    <script src="assets/code/sketch.js"></script>
+  </head>
+  <body>
+
+    <!-- +++++++++++++++++++++++++++++++++++++++++++++++++
+        ++++++++++++++++++++++++++++++++++++++++++++++++++
+        ++++++ BODY ++++++++++++++++++++++++++++++++++++++
+        ++++++++++++++++++++++++++++++++++++++++++++++++++
+        ++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+
+
+      <div class="header-container">
+          <div class="title-font">No habrá segunda cita, pero...</div>
+          </br>
+          </br>
+          <div class="description-font">Sabemos que buen desarrollador no sólo escribe líneas de código. Sino es aquel que usa la programación como un medio para <b>crear</b>. Ésto implica que debe estar al tanto de las nuevas tecnologías que van apareciendo y más importante, tener el olfato de cuáles serán las más disruptivas.</div>
+          </br>
+          </br>
+          <div class="description-font">Con los datos de <a href="https://www.kaggle.com/sachag/state-of-js-2019"><i>The State of JS</i></a> hicimos un <i>mapa</i> del desarrollo de JS.</div>
+          </br>
+          </br>
+          <div class="description-font">¿Tu dónde te encuentras?</div>
+
+
+      </div>
+
+
+
+    <!-- QUESTIONS -->
+
+    
+
+
+    <div class="input-block-Q1">
+        <div class="label-font">Q1. ¿Desde hace cuánto tiempo programas en Java Script?</div>
+      </br>
+        <div class="btn-group">
+          <button type='button' class="btn" id="1B1"><span>1</span><div class="label-answer-font">0-1</div></button>
+          <button type='button' class="btn" id="1B2"><span>2</span><div class="label-answer-font">1-2</div></button>
+          <button type='button' class="btn" id="1B3"><span>3</span><div class="label-answer-font">2-5</div></button>
+          <button type='button' class="btn" id="1B4"><span>4</span><div class="label-answer-font">5-10</div></button>
+          <button type='button' class="btn" id="1B5"><span>5</span><div class="label-answer-font">10-20</div></button>
+          <button type='button' class="btn" id="1B6"><span>6</span><div class="label-answer-font">20+</div></button>
+        </div>
+    </div>
+
+
+    <div class="input-block-Q2">
+      <div class="label-font">Q2. ¿Aprendiste una nueva librería en 2019?</div>
+    </br>
+      <div class="btn-group">
+        <button type='button' class="btn" id="2B1"><span>1</span><div class="label-answer-font">SÍ</div></button>
+        <button type='button' class="btn" id="2B2"><span>2</span><div class="label-answer-font">NO</div></button>
+      </div>
+  </div>
+
+  <div class="input-block-Q3">
+    <div class="label-font">Q3. ¿Prefieres aprender una nueva librería o especializarte en una que ya conoces?</div>
+  </br>
+    <div class="btn-group">
+      <button type='button' class="btn" id="3B1"><span>1</span><div class="label-answer-font">NUEVA</div></button>
+      <button type='button' class="btn" id="3B2"><span>2</span><div class="label-answer-font">ESPECIALIZARME</div></button>
+    </div>
+</div>
+
+
+<div class="input-block-Q4">
+  <div class="label-font">Q4. ¿Cuál paradigma de programación usas más?</div>
+</br>
+  <div class="btn-group">
+    <button type='button' class="btn" id="4B1"><span>1</span><div class="label-answer-font">ORIENTADA A OBJETOS</div></button>
+    <button type='button' class="btn" id="4B2"><span>2</span><div class="label-answer-font">FUNCIONAL</div></button>
+    <button type='button' class="btn" id="4B3"><span>3</span><div class="label-answer-font">REACTIVA</div></button>
+
+  </div>
+</div>
+
+<div class="input-block-Q5">
+  <div class="label-font">Q5. ¿Qué tan importante para ti es saber desarrollar Backend?</div>
+</br>
+  <div class="btn-group">
+    <button type='button' class="btn" id="5B1"><span>1</span><div class="label-answer-font">MUY POCO</div></button>
+    <button type='button' class="btn" id="5B2"><span>2</span><div class="label-answer-font">POCO</div></button>
+    <button type='button' class="btn" id="5B3"><span>3</span><div class="label-answer-font">REGULAR</div></button>
+    <button type='button' class="btn" id="5B4"><span>4</span><div class="label-answer-font">INDISPENSABLE</div></button>
+  </div>
+</div>
+
+
+  <div class="input-block-Q6">
+    <div class="description-font">En el <i>mapa</i> del desarrollo de JS identificamos cinco perfiles diferentes.</div>
+  </br>
+  <div class="description-font">El radio de cada circulo se relaciona con el valor de cada característica.</div>
+</br>
+  <div class="description-font">El nivel de pertenencia a cada perfil se refleja en la posición sobre las X.</div>
+</br>
+    <div class="label-font">¿Tu dónde te encuentras?</div>
+  </br>
+    <div class="btn-group">
+      <button type='button' class="btn" id="6B1"><span> </span><div class="label-answer-font">VER</div></button>
+    </div>
+</div>
+
+
+    <!-- MAPA -->
+
+      <div id='centroMap' class='centroMap'></div>
+
+    <!-- HEADER -->
+      <!--<div id='imageHeader' class='imageHeader'>
+          <img src="assets/images/MERSIVEMap.png">
+      </div>-->
+
+    <!-- WELCOME -->
+
+    <!--<div id='welcomeContainer' class='welcomeContainer'>
+        <img src="assets/images/welcomeImage.png">
+        <img id='welcomeContainerButton' class='welcomeContainerButton' src="assets/images/welcomeImageButton_1.png">
+    </div>-->
+
+
+
+  
+    
+
+
+
+
+
+
+
+  </body>
+</html>

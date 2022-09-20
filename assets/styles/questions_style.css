@@ -1,0 +1,43 @@
+/* PAGE & INPUT STYLING */
+body {
+    background: rgb(255, 255, 255);
+  }
+  
+
+  .btn-group button {
+    background-color: #EAE7DC; /* Green background */
+    border: 1px solid #8E8D8A; /* Green border */
+    color: #E85A4F; /* White text */
+    padding: 10px 24px; /* Some padding */
+    float: left; /* Float the buttons side by side */
+  }
+  
+  .btn-group button:not(:last-child) {
+    border-right: none; /* Prevent double borders */
+  }
+  
+  /* Clear floats (clearfix hack) */
+  .btn-group:after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  /* Add a background color on hover */
+  .btn-group button:hover {
+    background-color: #D8C3A5;
+  }
+
+  .btn-group button span {
+    display: inline-block;
+    padding: 1px 6px;
+    font-size: 0.8em;
+    vertical-align: middle;
+    text-align: center;
+    margin-top: -5px;
+  }
+  
+  /* ENDS */
+  
+
+  
